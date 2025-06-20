@@ -1,0 +1,65 @@
+import { AnimatedSvg, AnimatedPath } from './chunk-5NP36EHL.js';
+import { jsxs, jsx } from 'react/jsx-runtime';
+
+var SvgHandMetal = ({
+  size = 24,
+  color = "currentColor",
+  strokeWidth = 2,
+  svgProps,
+  pathProps,
+  animatedProps,
+  ref,
+  ...props
+}) => /* @__PURE__ */ jsxs(
+  AnimatedSvg,
+  {
+    viewBox: "0 0 24 24",
+    fill: "none",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    animatedProps,
+    ref,
+    width: size,
+    height: size,
+    stroke: color,
+    strokeWidth,
+    ...props,
+    children: [
+      /* @__PURE__ */ jsx(
+        AnimatedPath,
+        {
+          d: "M18 12.5V10a2 2 0 0 0-2-2a2 2 0 0 0-2 2v1.4",
+          animatedProps,
+          ...pathProps
+        }
+      ),
+      /* @__PURE__ */ jsx(
+        AnimatedPath,
+        {
+          d: "M14 11V9a2 2 0 1 0-4 0v2",
+          animatedProps,
+          ...pathProps
+        }
+      ),
+      /* @__PURE__ */ jsx(
+        AnimatedPath,
+        {
+          d: "M10 10.5V5a2 2 0 1 0-4 0v9",
+          animatedProps,
+          ...pathProps
+        }
+      ),
+      /* @__PURE__ */ jsx(
+        AnimatedPath,
+        {
+          d: "m7 15-1.76-1.76a2 2 0 0 0-2.83 2.82l3.6 3.6C7.5 21.14 9.2 22 12 22h2a8 8 0 0 0 8-8V7a2 2 0 1 0-4 0v5",
+          animatedProps,
+          ...pathProps
+        }
+      )
+    ]
+  }
+);
+var HandMetal_default = SvgHandMetal;
+
+export { HandMetal_default };

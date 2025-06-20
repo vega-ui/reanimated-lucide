@@ -1,0 +1,42 @@
+import { AnimatedSvg, AnimatedPath } from './chunk-5NP36EHL.js';
+import { jsxs, jsx } from 'react/jsx-runtime';
+
+var SvgBattery = ({
+  size = 24,
+  color = "currentColor",
+  strokeWidth = 2,
+  svgProps,
+  pathProps,
+  animatedProps,
+  ref,
+  ...props
+}) => /* @__PURE__ */ jsxs(
+  AnimatedSvg,
+  {
+    viewBox: "0 0 24 24",
+    fill: "none",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    animatedProps,
+    ref,
+    width: size,
+    height: size,
+    stroke: color,
+    strokeWidth,
+    ...props,
+    children: [
+      /* @__PURE__ */ jsx(
+        AnimatedPath,
+        {
+          d: "M 22 14 L 22 10",
+          animatedProps,
+          ...pathProps
+        }
+      ),
+      /* @__PURE__ */ jsx("rect", { x: 2, y: 6, width: 16, height: 12, rx: 2 })
+    ]
+  }
+);
+var Battery_default = SvgBattery;
+
+export { Battery_default };

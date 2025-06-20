@@ -1,0 +1,41 @@
+{
+	"name": "reanimated-lucide",
+	"type": "module",
+	"scripts": {
+		"build:icons": "tsx node_modules/@svgr/cli/dist/index node_modules/lucide-static/icons --out-dir src/components/icons --template ./scripts/svgrTemplate.ts",
+		"build": "tsup"
+	},
+	"dependencies": {
+		"react": "^19.1.0",
+		"react-native-reanimated": "^3.18.0",
+		"react-native-svg": "^15.12.0",
+		"react-native": "^0.80.0"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.27.4",
+		"@babel/traverse": "^7.27.4",
+		"@babel/types": "^7.27.6",
+		"@react-native/typescript-config": "^0.80.0",
+		"@svgr/cli": "^8.1.0",
+		"@types/babel__core": "^7.20.5",
+		"@types/babel__traverse": "^7.20.7",
+		"@types/react": "^19.1.8",
+		"lucide-static": "^0.518.0",
+		"tsup": "^8.5.0",
+		"tsx": "^4.20.3",
+		"typescript": "^5.8.3"
+	},
+	"resolutions": {
+		"react-native-svg": "*",
+		"react-native-reanimated": "*",
+		"react-native": "*",
+		"react": "*"
+	},
+	"exports": {
+		".": {
+			"types": "./build/index.d.ts",
+			"import": "./build/index.js",
+			"default": "./build/index.js"
+		}
+	}
+}
