@@ -4,19 +4,10 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-overrides:
-  react-native-svg: '*'
-  react-native-reanimated: '*'
-  react-native: '*'
-  react: '*'
-
 importers:
 
   .:
     dependencies:
-      '@babel/core':
-        specifier: ^7.27.4
-        version: 7.27.4
       '@babel/traverse':
         specifier: ^7.27.4
         version: 7.27.4
@@ -24,16 +15,16 @@ importers:
         specifier: ^7.27.6
         version: 7.27.6
       react:
-        specifier: '*'
+        specifier: ^19.1.0
         version: 19.1.0
       react-native:
-        specifier: '*'
+        specifier: ^0.80.0
         version: 0.80.0(@babel/core@7.27.4)(@types/react@19.1.8)(react@19.1.0)
       react-native-reanimated:
-        specifier: '*'
+        specifier: ^3.18.0
         version: 3.18.0(@babel/core@7.27.4)(react-native@0.80.0(@babel/core@7.27.4)(@types/react@19.1.8)(react@19.1.0))(react@19.1.0)
       react-native-svg:
-        specifier: '*'
+        specifier: ^15.12.0
         version: 15.12.0(react-native@0.80.0(@babel/core@7.27.4)(@types/react@19.1.8)(react@19.1.0))(react@19.1.0)
     devDependencies:
       '@react-native/typescript-config':
@@ -1830,7 +1821,7 @@ packages:
     hasBin: true
     peerDependencies:
       '@types/react': ^19.1.0
-      react: '*'
+      react: ^19.1.0
     peerDependenciesMeta:
       '@types/react':
         optional: true
