@@ -1,5 +1,6 @@
 {
 	"name": "@vega-ui/reanimated-lucide",
+	"version": "1.0.0",
 	"type": "module",
 	"scripts": {
 		"build:icons": "tsx node_modules/@svgr/cli/dist/index node_modules/lucide-static/icons --out-dir src/components --template ./scripts/svgrTemplate.ts",
@@ -38,8 +39,6 @@
 			"default": "./build/index.js"
 		}
 	},
-	"files": [
-		"build"
-	],
+	"files": ["build"],
 	"packageManager": "pnpm@10.0.0"
 }
