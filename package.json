@@ -13,7 +13,7 @@
 		"react-native": "^0.80.0"
 	},
 	"devDependencies": {
-		"@vega-ui/svgr-reanimated": "1.0.2",
+		"@vega-ui/svgr-reanimated": "1.0.4",
 		"@react-native/typescript-config": "^0.80.0",
 		"@svgr/cli": "^8.1.0",
 		"@types/react": "^19.1.8",

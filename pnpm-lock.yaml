@@ -27,33 +27,18 @@ importers:
         specifier: '*'
         version: 15.12.0(react-native@0.80.0(@babel/core@7.27.4)(@types/react@19.1.8)(react@19.1.0))(react@19.1.0)
     devDependencies:
-      '@babel/core':
-        specifier: ^7.27.4
-        version: 7.27.4
-      '@babel/traverse':
-        specifier: ^7.27.4
-        version: 7.27.4
-      '@babel/types':
-        specifier: ^7.27.6
-        version: 7.27.6
       '@react-native/typescript-config':
         specifier: ^0.80.0
         version: 0.80.0
       '@svgr/cli':
         specifier: ^8.1.0
         version: 8.1.0(typescript@5.8.3)
-      '@types/babel__core':
-        specifier: ^7.20.5
-        version: 7.20.5
-      '@types/babel__traverse':
-        specifier: ^7.20.7
-        version: 7.20.7
       '@types/react':
         specifier: ^19.1.8
         version: 19.1.8
       '@vega-ui/svgr-reanimated':
-        specifier: 1.0.2
-        version: 1.0.2
+        specifier: 1.0.4
+        version: 1.0.4
       lucide-static:
         specifier: ^0.518.0
         version: 0.518.0
@@ -842,8 +827,8 @@ packages:
   '@types/yargs@17.0.33':
     resolution: {integrity: sha512-WpxBCKWPLr4xSsHgz511rFJAM+wS28w2zEO1QDNY5zM/S8ok70NNfztH0xwhqKyaK0OHCbN98LDAZuy1ctxDkA==}
 
-  '@vega-ui/svgr-reanimated@1.0.2':
-    resolution: {integrity: sha512-+kya7kmVqbBLaABeZGgFtSeDGRTZCJmQb3xvKAf9lpNf4z/ELjAnx237F2yWvQyov8mtwcTGmcAPm/nJYGPvng==}
+  '@vega-ui/svgr-reanimated@1.0.4':
+    resolution: {integrity: sha512-6yIl6ZMUHyfX/SUaVRtFSiEFeLj9DUgASpmOnmfK9FzE6IrmkZCzPXPZnIE0N6qv8yrrcr+qCKb2L4HRYnn5kg==}
 
   abort-controller@3.0.0:
     resolution: {integrity: sha512-h8lQ8tacZYnR3vNQTgibj+tODHI5/+l06Au2Pcriv/Gmet0eaj4TwWH41sO9wnHDiQsEj19q0drzdWdeAHtweg==}
@@ -3025,7 +3010,7 @@ snapshots:
     dependencies:
       '@types/yargs-parser': 21.0.3
 
-  '@vega-ui/svgr-reanimated@1.0.2':
+  '@vega-ui/svgr-reanimated@1.0.4':
     dependencies:
       '@babel/traverse': 7.27.4
       '@babel/types': 7.27.6
