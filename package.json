@@ -7,13 +7,8 @@
 		"build": "tsup"
 	},
 	"dependencies": {
-		"@babel/core": "^7.27.4",
 		"@babel/traverse": "^7.27.4",
-		"@babel/types": "^7.27.6",
-		"react": "^19.1.0",
-		"react-native": "^0.80.0",
-		"react-native-reanimated": "^3.18.0",
-		"react-native-svg": "^15.12.0"
+		"@babel/types": "^7.27.6"
 	},
 	"devDependencies": {
 		"@react-native/typescript-config": "^0.80.0",
@@ -25,11 +20,11 @@
 		"tsx": "^4.20.3",
 		"typescript": "^5.8.3"
 	},
-	"resolutions": {
-		"react-native-svg": "*",
-		"react-native-reanimated": "*",
-		"react-native": "*",
-		"react": "*"
+	"peerDependencies": {
+		"react-native-svg": "^15.12.0",
+		"react-native-reanimated": "^3.18.0",
+		"react-native": "^0.80.0",
+		"react": "^19.1.0"
 	},
 	"module": "./build/index.js",
 	"types": "./build/index.d.ts",
