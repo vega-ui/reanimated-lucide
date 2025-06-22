@@ -13,13 +13,9 @@
 		"react-native": "^0.80.0"
 	},
 	"devDependencies": {
-		"@babel/core": "^7.27.4",
-		"@babel/traverse": "^7.27.4",
-		"@babel/types": "^7.27.6",
+		"@vega-ui/svgr-reanimated": "1.0.2",
 		"@react-native/typescript-config": "^0.80.0",
 		"@svgr/cli": "^8.1.0",
-		"@types/babel__core": "^7.20.5",
-		"@types/babel__traverse": "^7.20.7",
 		"@types/react": "^19.1.8",
 		"lucide-static": "^0.518.0",
 		"tsup": "^8.5.0",

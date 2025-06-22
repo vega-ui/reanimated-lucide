@@ -51,6 +51,9 @@ importers:
       '@types/react':
         specifier: ^19.1.8
         version: 19.1.8
+      '@vega-ui/svgr-reanimated':
+        specifier: 1.0.2
+        version: 1.0.2
       lucide-static:
         specifier: ^0.518.0
         version: 0.518.0
@@ -838,6 +841,9 @@ packages:
 
   '@types/yargs@17.0.33':
     resolution: {integrity: sha512-WpxBCKWPLr4xSsHgz511rFJAM+wS28w2zEO1QDNY5zM/S8ok70NNfztH0xwhqKyaK0OHCbN98LDAZuy1ctxDkA==}
+
+  '@vega-ui/svgr-reanimated@1.0.2':
+    resolution: {integrity: sha512-+kya7kmVqbBLaABeZGgFtSeDGRTZCJmQb3xvKAf9lpNf4z/ELjAnx237F2yWvQyov8mtwcTGmcAPm/nJYGPvng==}
 
   abort-controller@3.0.0:
     resolution: {integrity: sha512-h8lQ8tacZYnR3vNQTgibj+tODHI5/+l06Au2Pcriv/Gmet0eaj4TwWH41sO9wnHDiQsEj19q0drzdWdeAHtweg==}
@@ -3018,6 +3024,13 @@ snapshots:
   '@types/yargs@17.0.33':
     dependencies:
       '@types/yargs-parser': 21.0.3
+
+  '@vega-ui/svgr-reanimated@1.0.2':
+    dependencies:
+      '@babel/traverse': 7.27.4
+      '@babel/types': 7.27.6
+    transitivePeerDependencies:
+      - supports-color
 
   abort-controller@3.0.0:
     dependencies:
