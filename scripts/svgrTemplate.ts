@@ -28,7 +28,7 @@ const template: TemplateFunction = ({ imports, interfaces, jsx, props, exports, 
 ${imports}
 import { type SvgProps } from 'react-native-svg';
 import { useAnimatedProps } from 'react-native-reanimated';
-import { AnimatedSvg, AnimatedPath } from '../../animatedFactory'
+import { AnimatedSvg, AnimatedPath } from '../animatedFactory'
 
 ${interfaces}
 

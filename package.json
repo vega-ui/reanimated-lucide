@@ -1,8 +1,8 @@
 {
-	"name": "reanimated-lucide",
+	"name": "@vega-ui/reanimated-lucide",
 	"type": "module",
 	"scripts": {
-		"build:icons": "tsx node_modules/@svgr/cli/dist/index node_modules/lucide-static/icons --out-dir src/components/icons --template ./scripts/svgrTemplate.ts",
+		"build:icons": "tsx node_modules/@svgr/cli/dist/index node_modules/lucide-static/icons --out-dir src/components --template ./scripts/svgrTemplate.ts",
 		"build": "tsup"
 	},
 	"dependencies": {
