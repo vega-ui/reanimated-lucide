@@ -28,6 +28,8 @@
 		"react-native": "*",
 		"react": "*"
 	},
+	"module": "./build/index.js",
+	"types": "./build/index.d.ts",
 	"exports": {
 		".": {
 			"types": "./build/index.d.ts",
