@@ -40,5 +40,6 @@
 	},
 	"files": [
 		"build"
-	]
+	],
+	"packageManager": "pnpm@10.0.0"
 }
