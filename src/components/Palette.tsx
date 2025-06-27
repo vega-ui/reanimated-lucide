@@ -2,12 +2,11 @@ import * as React from "react";
 import type { SVGProps } from "react";
 import { type SvgProps } from "react-native-svg";
 import { useAnimatedProps } from "react-native-reanimated";
-import { AnimatedSvg, AnimatedPath } from "../animatedFactory";
+import { AnimatedSvg, AnimatedPath, AnimatedCircle } from "../animatedFactory";
 export interface AnimatedSvgProps extends SvgProps {
   size?: number | string;
   color?: string;
   strokeWidth?: number | string;
-  svgProps?: Partial<React.ComponentProps<typeof AnimatedSvg>>;
   pathProps?: Partial<React.ComponentProps<typeof AnimatedPath>>;
   animatedProps?: ReturnType<typeof useAnimatedProps>;
   ref?: React.Ref<React.Component<SvgProps>>;
@@ -16,7 +15,6 @@ const SvgPalette: React.FC<AnimatedSvgProps> = ({
   size = 24,
   color = "currentColor",
   strokeWidth = 2,
-  svgProps,
   pathProps,
   animatedProps,
   ref,
@@ -40,10 +38,34 @@ const SvgPalette: React.FC<AnimatedSvgProps> = ({
       animatedProps={animatedProps}
       {...pathProps}
     />
-    <circle cx={13.5} cy={6.5} r={0.5} fill="currentColor" />
-    <circle cx={17.5} cy={10.5} r={0.5} fill="currentColor" />
-    <circle cx={6.5} cy={12.5} r={0.5} fill="currentColor" />
-    <circle cx={8.5} cy={7.5} r={0.5} fill="currentColor" />
+    <AnimatedCircle
+      cx={13.5}
+      cy={6.5}
+      r={0.5}
+      fill="currentColor"
+      animatedProps={animatedProps}
+    />
+    <AnimatedCircle
+      cx={17.5}
+      cy={10.5}
+      r={0.5}
+      fill="currentColor"
+      animatedProps={animatedProps}
+    />
+    <AnimatedCircle
+      cx={6.5}
+      cy={12.5}
+      r={0.5}
+      fill="currentColor"
+      animatedProps={animatedProps}
+    />
+    <AnimatedCircle
+      cx={8.5}
+      cy={7.5}
+      r={0.5}
+      fill="currentColor"
+      animatedProps={animatedProps}
+    />
   </AnimatedSvg>
 );
 export default SvgPalette;

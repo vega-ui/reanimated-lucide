@@ -2,12 +2,11 @@ import * as React from "react";
 import type { SVGProps } from "react";
 import { type SvgProps } from "react-native-svg";
 import { useAnimatedProps } from "react-native-reanimated";
-import { AnimatedSvg, AnimatedPath } from "../animatedFactory";
+import { AnimatedSvg, AnimatedPath, AnimatedCircle } from "../animatedFactory";
 export interface AnimatedSvgProps extends SvgProps {
   size?: number | string;
   color?: string;
   strokeWidth?: number | string;
-  svgProps?: Partial<React.ComponentProps<typeof AnimatedSvg>>;
   pathProps?: Partial<React.ComponentProps<typeof AnimatedPath>>;
   animatedProps?: ReturnType<typeof useAnimatedProps>;
   ref?: React.Ref<React.Component<SvgProps>>;
@@ -16,7 +15,6 @@ const SvgBanknote: React.FC<AnimatedSvgProps> = ({
   size = 24,
   color = "currentColor",
   strokeWidth = 2,
-  svgProps,
   pathProps,
   animatedProps,
   ref,
@@ -36,7 +34,7 @@ const SvgBanknote: React.FC<AnimatedSvgProps> = ({
     {...props}
   >
     <rect width={20} height={12} x={2} y={6} rx={2} />
-    <circle cx={12} cy={12} r={2} />
+    <AnimatedCircle cx={12} cy={12} r={2} animatedProps={animatedProps} />
     <AnimatedPath
       d="M6 12h.01M18 12h.01"
       animatedProps={animatedProps}

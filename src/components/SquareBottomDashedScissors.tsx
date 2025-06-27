@@ -2,12 +2,11 @@ import * as React from "react";
 import type { SVGProps } from "react";
 import { type SvgProps } from "react-native-svg";
 import { useAnimatedProps } from "react-native-reanimated";
-import { AnimatedSvg, AnimatedPath } from "../animatedFactory";
+import { AnimatedSvg, AnimatedPath, AnimatedCircle } from "../animatedFactory";
 export interface AnimatedSvgProps extends SvgProps {
   size?: number | string;
   color?: string;
   strokeWidth?: number | string;
-  svgProps?: Partial<React.ComponentProps<typeof AnimatedSvg>>;
   pathProps?: Partial<React.ComponentProps<typeof AnimatedPath>>;
   animatedProps?: ReturnType<typeof useAnimatedProps>;
   ref?: React.Ref<React.Component<SvgProps>>;
@@ -16,7 +15,6 @@ const SvgSquareBottomDashedScissors: React.FC<AnimatedSvgProps> = ({
   size = 24,
   color = "currentColor",
   strokeWidth = 2,
-  svgProps,
   pathProps,
   animatedProps,
   ref,
@@ -42,7 +40,7 @@ const SvgSquareBottomDashedScissors: React.FC<AnimatedSvgProps> = ({
     />
     <AnimatedPath d="M10 22H8" animatedProps={animatedProps} {...pathProps} />
     <AnimatedPath d="M16 22h-2" animatedProps={animatedProps} {...pathProps} />
-    <circle cx={8} cy={8} r={2} />
+    <AnimatedCircle cx={8} cy={8} r={2} animatedProps={animatedProps} />
     <AnimatedPath
       d="M9.414 9.414 12 12"
       animatedProps={animatedProps}
@@ -53,7 +51,7 @@ const SvgSquareBottomDashedScissors: React.FC<AnimatedSvgProps> = ({
       animatedProps={animatedProps}
       {...pathProps}
     />
-    <circle cx={8} cy={16} r={2} />
+    <AnimatedCircle cx={8} cy={16} r={2} animatedProps={animatedProps} />
     <AnimatedPath
       d="m18 6-8.586 8.586"
       animatedProps={animatedProps}

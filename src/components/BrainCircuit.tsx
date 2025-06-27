@@ -2,12 +2,11 @@ import * as React from "react";
 import type { SVGProps } from "react";
 import { type SvgProps } from "react-native-svg";
 import { useAnimatedProps } from "react-native-reanimated";
-import { AnimatedSvg, AnimatedPath } from "../animatedFactory";
+import { AnimatedSvg, AnimatedPath, AnimatedCircle } from "../animatedFactory";
 export interface AnimatedSvgProps extends SvgProps {
   size?: number | string;
   color?: string;
   strokeWidth?: number | string;
-  svgProps?: Partial<React.ComponentProps<typeof AnimatedSvg>>;
   pathProps?: Partial<React.ComponentProps<typeof AnimatedPath>>;
   animatedProps?: ReturnType<typeof useAnimatedProps>;
   ref?: React.Ref<React.Component<SvgProps>>;
@@ -16,7 +15,6 @@ const SvgBrainCircuit: React.FC<AnimatedSvgProps> = ({
   size = 24,
   color = "currentColor",
   strokeWidth = 2,
-  svgProps,
   pathProps,
   animatedProps,
   ref,
@@ -72,10 +70,10 @@ const SvgBrainCircuit: React.FC<AnimatedSvgProps> = ({
       animatedProps={animatedProps}
       {...pathProps}
     />
-    <circle cx={16} cy={13} r={0.5} />
-    <circle cx={18} cy={3} r={0.5} />
-    <circle cx={20} cy={21} r={0.5} />
-    <circle cx={20} cy={8} r={0.5} />
+    <AnimatedCircle cx={16} cy={13} r={0.5} animatedProps={animatedProps} />
+    <AnimatedCircle cx={18} cy={3} r={0.5} animatedProps={animatedProps} />
+    <AnimatedCircle cx={20} cy={21} r={0.5} animatedProps={animatedProps} />
+    <AnimatedCircle cx={20} cy={8} r={0.5} animatedProps={animatedProps} />
   </AnimatedSvg>
 );
 export default SvgBrainCircuit;

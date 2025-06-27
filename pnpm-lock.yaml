@@ -37,8 +37,8 @@ importers:
         specifier: ^19.1.8
         version: 19.1.8
       '@vega-ui/svgr-reanimated':
-        specifier: 1.0.5
-        version: 1.0.5
+        specifier: 1.0.6
+        version: 1.0.6
       lucide-static:
         specifier: ^0.518.0
         version: 0.518.0
@@ -827,8 +827,8 @@ packages:
   '@types/yargs@17.0.33':
     resolution: {integrity: sha512-WpxBCKWPLr4xSsHgz511rFJAM+wS28w2zEO1QDNY5zM/S8ok70NNfztH0xwhqKyaK0OHCbN98LDAZuy1ctxDkA==}
 
-  '@vega-ui/svgr-reanimated@1.0.5':
-    resolution: {integrity: sha512-dN2ow/BO8Nh5Lfo8baJdldJ+O41VOZ9yhb3+TuYThxT3B/OAOXMhZD5mQJhpdgkq7vAYInkOWR0nK05Fr0cDEQ==}
+  '@vega-ui/svgr-reanimated@1.0.6':
+    resolution: {integrity: sha512-IcinUFbeh3rxjCLxlcmI7MQmrHz3znPKbWT0CobqhL2chVsnPYZSNivSzGXDjAPiRt0c/CVuYIYiyswA5GGwtg==}
 
   abort-controller@3.0.0:
     resolution: {integrity: sha512-h8lQ8tacZYnR3vNQTgibj+tODHI5/+l06Au2Pcriv/Gmet0eaj4TwWH41sO9wnHDiQsEj19q0drzdWdeAHtweg==}
@@ -3010,7 +3010,7 @@ snapshots:
     dependencies:
       '@types/yargs-parser': 21.0.3
 
-  '@vega-ui/svgr-reanimated@1.0.5':
+  '@vega-ui/svgr-reanimated@1.0.6':
     dependencies:
       '@babel/traverse': 7.27.4
       '@babel/types': 7.27.6
